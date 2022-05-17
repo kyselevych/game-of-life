@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Game of life</h1>
+    </div>
+    <div class="container panel">
+        <div>
+            <canvas id="field"></canvas>
+            <div>Number of moves: <span id="moveCounter">0</span></div>
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__wrapper">
+                <label for="fillCells">Fill cells</label>
+                <input id="fillCells" type="number" class="field">
+                <button id="setFillCells" class="button">Fill</button>
+            </div>
+            <div class="control-panel__wrapper">
+                <span>Loop</span>
+                <button id="startLoop" class="button">Start loop</button>
+                <button id="stopLoop" class="button">Stop loop</button>
+            </div>
+            <div class="control-panel__wrapper">
+                <span>Control</span>
+                <button id="next" class="button">Next generation</button>
+                <button id="reset" class="button">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

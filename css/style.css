@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+:root {
+	--accent-color: #51e141;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.panel {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+body {
+	font-family: 'Koulen', cursive;
+	font-size: 16px;
+	background-color: #0e0e0e;
+	color: var(--accent-color);
+}
+
+.title {
+	text-align: center;
+	font-size: 50px;
+	text-shadow: #4a8f08 3px 3px, #4a8f08 2px 2px, #4a8f08 1px 1px;
+
+}
+
+#field {
+	border: 1px solid #626262;
+}
+
+.button {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border: 2px solid var(--accent-color);
+	color: var(--accent-color);
+	background: none;
+	font: inherit;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--accent-color);
+	color: white;
+}
+
+.field {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	font: inherit;
+	text-align: center;
+	border: 2px solid var(--accent-color);
+	color: #fff;
+	background: none;
+	outline: none;
+}
+
+.field + *,
+.button + * {
+	margin-top: 8px;
+}
+
+.control-panel {
+	width: 200px;
+}
+
+.control-panel__wrapper:not(:first-child) {
+	margin-top: 30px;
+}
